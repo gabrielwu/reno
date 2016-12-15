@@ -1,0 +1,218 @@
+﻿body {
+    margin: 0;
+}
+a {
+    display: inline-block;
+}
+table {
+    border-collapse:collapse;
+}
+#wrapper {
+    width: 1000px;
+    margin: auto;
+	position:relative;
+	_margin-left: 100px;
+}
+#header #banner {
+    height: 120px;
+    margin: 10px 0 0px 0;
+	border-radius: 16px 16px 0 0;
+}
+#header #banner #site_name{
+	padding: 76px 0 0 240px;
+}
+#header #banner .cn {
+    padding: 10px 180px 5px;
+}
+#header #banner .en {
+    padding: 5px 180px 5px 240px;
+}
+#content .nav{
+    margin: 4px 0 0;
+    height: 40px;
+	border-radius: 0 0 0 0;
+	position:relative;
+	z-index: 1000;
+	/*behavior: url(media/css/common/PIE.htc);*/
+}
+#content .nav ul {
+    margin:0 ;
+	padding: 0 20px;
+	height: 100%;
+}
+#content .nav ul li{
+    float: left;
+	border-radius: 5px;
+    height: 100%;
+    _height: 38px;
+	padding: 0;
+	z-index:40000;
+}
+#content .nav first_ul{
+	z-index:40000;
+}
+#content .nav ul li a{
+	display: block;
+	margin: 6px;
+	height: 20px;
+	border-radius: 6px;
+	display: inline-block;
+	padding: 5px 13px 3px; 
+}
+#content .nav .second_nav{
+    position:absolute;
+	margin: -2px 0 0 -10px;
+	width: 150px;
+	padding: 3px 0;
+	z-index: 10000;
+	display: none;
+	border-radius: 4px;
+}
+#content .nav .second_nav p{
+    position: relative;
+	padding: 0;
+	margin: 0px;
+	clear: both;
+}
+#content .nav .second_nav p a{
+    padding: 4px 18px 0 18px;
+	margin: 0;
+	display: block;
+}
+#second_nav {
+    position:absolute;
+	z-index: 100000;
+	left: 0;
+	top: 65px;
+	+top: 65px;
+	_top: 60px;
+}
+#second_nav div {
+	border-radius: 4px;
+	position: absolute;
+	padding: 5px 0 10px;
+	display: none;
+}
+#second_nav div p{
+    position: relative;
+	padding: 0;
+	margin: 0px;
+}
+#second_nav div p a{
+    padding: 4px 12px 0 12px;
+	margin: 0;
+	display: block;
+	color: #fff;
+	width: 119px;
+}
+#second_nav div p a:hover{
+    text-decoration: underline;
+}
+#header hr {
+    margin: 0;
+}
+.slide {
+    visibility:hidden;
+}
+.slide a{
+    *margin: -3px 0;
+}
+#content {
+    position: relative;
+	min-height: 870px;
+	border-radius: 0 0 0px 0px;
+	zoom: 0;
+	/*behavior: url(media/css/common/PIE.htc);*/
+}
+#sidebar {
+	_height: 860px;
+	width: 210px;
+	padding: 0 10px 10px 15px;
+	*padding-top: 10px;
+	margin: 15px 0 0 0;
+	z-index:12;
+}
+#sidebar .sidebar_nav,#sidebar .sidebar_nav_1, #sidebar .sidebar_nav_static{
+    width: 210px;
+	margin: auto;   
+}    
+#sidebar .sidebar_nav ul, #sidebar .sidebar_nav_static ul{
+    padding: 0;
+    margin: 0 0 10px;
+}
+#sidebar .sidebar_nav_1 ul {
+    padding: 0;
+    margin: 0 0;
+}
+#sidebar .sidebar_nav ul li,#sidebar .sidebar_nav_1 ul li, #sidebar .sidebar_nav_static ul li{
+    padding: 0;
+}
+#sidebar .sidebar_nav ul li a,#sidebar .sidebar_nav_1 ul li a, #sidebar .sidebar_nav_static ul li a{
+    display: block;
+    padding: 5px 18px 5px 24px;
+}
+#sidebar .sidebar_nav div,#sidebar .sidebar_nav_1 div, #sidebar .sidebar_nav_static div{
+    padding: 0;     
+}
+#sidebar  #sidebar_nav_1 ul li{
+    padding: 5px 18px 5px 16px;
+}
+#sidebar  #sidebar_nav_1 ul li span{
+    display: inline-block;
+	width: 70px;
+}
+#sidebar  #sidebar_nav_1 ul li p{
+    margin: 0;
+    display: inline-block;
+}
+#back_to_top {
+    position: fixed;
+	margin-left: 90px;
+	bottom: 50px;
+	width: 44px;
+	height: 40px;
+	border-radius: 3px;
+}
+#back_to_top a{
+	display: block;
+	border-radius: 3px;
+}
+#main {
+    position: absolute;
+	top: 70px;
+	*top: 66px;
+	min-height: 840px;
+	width: 770px;
+    left: 225px;
+	z-index:1;
+}
+#main #area {
+    margin: 15px 15px 0px;
+	padding: 0px 0 0px; 
+	border-radius: 4px;
+}
+#footer {
+    padding: 10px;
+	margin: 0px 0 10px 0;
+	background: #AAA;
+	border-radius: 0 0 5px 5px;
+}
+#footer .copyright {
+	margin: auto;
+	height: auto;
+}
+#footer .copyright table{
+	margin: auto;
+	height: auto;
+}
+#footer hr{
+    margin: 0 0 4px;
+}
+#footer .copyright table tr td.copyright_td{
+	padding: 0 40px 0 0;
+}
+#footer .copyright #clicks{
+}
+#footer .copyright #clicks img{
+	padding: 0 0 0 0;
+}
