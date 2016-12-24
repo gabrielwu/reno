@@ -17,7 +17,7 @@
 	    <ul class="">
 		<?php 
     		$currenttime=getdate();
-			$currentyear=$currenttime[year];
+			$currentyear=$currenttime['year'];
 			$years = array($currentyear, $currentyear-1, $currentyear-2, $currentyear-3, $currentyear-4, $currentyear-5);
 		?>
 		    <li id="li_paper-1"><a href="publications.php"><span>Journal Papers</span></a></li>
