@@ -23,6 +23,7 @@
 	<div id="main" class="main_right">
 	    <div id="area">
 		<?php
+		    $j = 0;
 		    $a_type = "0";
 			$a_typeCondition =  "";
 			if (isset($_GET['a_type'])) {
