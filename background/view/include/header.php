@@ -1,4 +1,4 @@
-<?php session_start();?>
+<?php //session_start();?>
 <div class="header">
 	<p>Rare-earth Nano-optoelectronic Lab后台管理</p>
 	<a href="../controller/logout.php">[安全退出]</a>
