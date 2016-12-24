@@ -3,7 +3,7 @@
     <tr>
 	    <td align="right">
 		<?php
-		if (!$_SESSION['login']) {
+		if (!$_SESSION || !$_SESSION['login']) {
 		?>
 		    <span style="color:red;" id="login_msg"></span>
     		<span>Username</span><input placeholder="" class="text" type="text" size="10" name="username" id="username">
