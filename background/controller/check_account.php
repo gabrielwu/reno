@@ -7,7 +7,7 @@ $sql = "select * from admin where ad_account like binary('$account')";
 $resutl = mysql_query($sql);
 $info=mysql_fetch_array($resutl);
 mysql_close($link);
-if ($info && $info[ad_password] == sha1($password)) {
+if ($info && $info['ad_password'] == sha1($password)) {
 	session_start();
 	$_SESSION['mark']="login";
 	$_SESSION['ad_account'] = $account;
