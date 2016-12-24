@@ -1,5 +1,5 @@
 <?php
-	$link=mysql_connect("localhost","root","root") or die("Could not connect:".mysql_error());
+	$link=mysql_connect("localhost","root","") or die("Could not connect:".mysql_error());
 	mysql_select_db("reno",$link);
     mysql_query("set names 'utf8'");
 /*
