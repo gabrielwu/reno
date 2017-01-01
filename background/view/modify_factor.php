@@ -4,7 +4,7 @@ if ($_SESSION['mark']!="login") {
     echo "<script>alert('请先登录！');window.location.href='../login.html';</script>";
 }
 include("connect.php");
-$id = $_GET[id];
+$id = $_GET['id'];
 $sql="select * from link where l_id=$id";
 $result=mysql_query($sql);
 $row = mysql_fetch_array($result);
@@ -42,7 +42,7 @@ $row = mysql_fetch_array($result);
 				</tr>
 				<tr>
 					<td align="center">影响因子文件：</td>
-					<td ><a href="<?php echo '../'.$row[l_content];?>" target='_blank'>download</a></td>
+					<td ><a href="<?php echo '../'.$row['l_content'];?>" target='_blank'>download</a></td>
 				<tr>
 				<tr>
 					<td  align="center">更换影响因子文件：</td>

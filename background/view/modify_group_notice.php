@@ -31,14 +31,14 @@ $row = mysql_fetch_array($result);
 			<table width="650px" align="center" >
 				<tr>
 					<td align="center">标题 ：</td>
-					<td><input id="name" name="name" type="text" size="50" value="<?php echo $row[name];?>"/><font color="red">*</font></td>
+					<td><input id="name" name="name" type="text" size="50" value="<?php echo $row['name'];?>"/><font color="red">*</font></td>
 				</tr>
 				<tr>
 					<td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通知内容：</td>
 				</tr>
 				<tr>
 					<td colspan="2">
-					<textarea id="editor1" name="content" style="width:650px;height:400px;" ><?php echo $row[content];?></textarea>
+					<textarea id="editor1" name="content" style="width:650px;height:400px;" ><?php echo $row['content'];?></textarea>
 					<script>
 						var editor;
 						KindEditor.ready(function(K) {

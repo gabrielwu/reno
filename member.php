@@ -50,7 +50,7 @@
 											    <?php echo $row['m_cname']?>&nbsp;&nbsp;<?php echo $row['m_ename']?>
 											</a>
 										</li>
-										<li><?php echo $row['m_title1']?></li>
+										<li><?php echo $row['m_title']?></li>
 										<li><?php echo $row['m_email']?></li>
 										<li><?php echo $row['m_tel']?></li>
 										<li><?php echo $row['m_addr']?></li>
@@ -93,7 +93,7 @@
 											    <?php echo $row['m_cname']?>&nbsp;&nbsp;<?php echo $row['m_ename']?>
 											</a>
 										</li>
-										<li><?php echo $row['m_title1']?></li>
+										<li><?php echo $row['m_title']?></li>
 										<li><?php echo $row['m_email']?></li>
 										<li><?php echo $row['m_tel']?></li>
 										<li><?php echo $row['m_addr']?></li>
@@ -136,7 +136,7 @@
 											    <?php echo $row['m_cname']?>&nbsp;&nbsp;<?php echo $row['m_ename']?>
 											</a>
 										</li>
-										<li><?php echo $row['m_title1']?></li>
+										<li><?php echo $row['m_title']?></li>
 										<li><?php echo $row['m_email']?></li>
 										<li><?php echo $row['m_tel']?></li>
 										<li><?php echo $row['m_addr']?></li>
@@ -179,7 +179,7 @@
 											    <?php echo $row['m_cname']?>&nbsp;&nbsp;<?php echo $row['m_ename']?>
 											</a>
 										</li>
-										<li><?php echo $row['m_title1']?></li>
+										<li><?php echo $row['m_title']?></li>
 										<li><?php echo $row['m_email']?></li>
 										<li><?php echo $row['m_tel']?></li>
 										<li><?php echo $row['m_addr']?></li>

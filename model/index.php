@@ -40,6 +40,9 @@ function slide() {
     $sql5="select a_id,a_pic_cover_path,a_name from news where a_pic_cover_path is not null and a_isslide=1";
 	$result5 = mysql_query("$sql5");
 	$k=0;
+	$id = array();
+	$name = array();
+	$path = array();
 	while($row5 = mysql_fetch_array($result5)){
 	    $file_path = $path[$k]="./background".substr($row5['a_pic_cover_path'],2);
 		if (is_file($file_path)) {

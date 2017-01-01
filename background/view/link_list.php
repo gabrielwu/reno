@@ -20,15 +20,15 @@
 		    while ($row = mysql_fetch_array($result)) {
 		?>
 	    <tr>
-		    <td><input id="<?php echo $row[l_id];?>lname" type="text" value="<?php echo $row[l_name]; ?>" size="50"/></td>
-			<td><input id="<?php echo $row[l_id];?>website" type="text" value="<?php echo $row[3];?>" size="50"/></td>
+		    <td><input id="<?php echo $row['l_id'];?>lname" type="text" value="<?php echo $row['l_name']; ?>" size="50"/></td>
+			<td><input id="<?php echo $row['l_id'];?>website" type="text" value="<?php echo $row[3];?>" size="50"/></td>
 		    <td>
-			    <select id="<?php echo $row[l_id];?>lmark" name="mark">
+			    <select id="<?php echo $row['l_id'];?>lmark" name="mark">
 				    <option value="0" <?php if($row[2]=='0') echo 'selected="selected"';?>>学术期刊连接</option>
 				    <option value="1" <?php if($row[2]=='1') echo 'selected="selected"';?>>常用链接</option>
 			    </select>
 		    </td>
-			<td><a href="javascript:modifylink('<?php echo $row[l_id];?>')">修改</a>|<a href="javascript:deleteItem('<?php echo $row[0];?>')">删除</a></td>			
+			<td><a href="javascript:modifylink('<?php echo $row['l_id'];?>')">修改</a>|<a href="javascript:deleteItem('<?php echo $row[0];?>')">删除</a></td>			
 		</tr>
 		<?php } ?>
 	</tbody>

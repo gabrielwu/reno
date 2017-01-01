@@ -1,9 +1,9 @@
 <?php 
     session_start();
-	$invite_code = $_SESSION[invite_code];
-	$ad_account = $_SESSION[ad_account];
+	$invite_code = $_SESSION['invite_code'];
+	$ad_account = $_SESSION['ad_account'];
 	header("Content-Type:text/html;charset=utf-8");
-	$login_mark=$_GET[login_mark];
+	$login_mark=$_GET['login_mark'];
 ?>
 <style type='text/css'>
 table {margin: 20px auto;}

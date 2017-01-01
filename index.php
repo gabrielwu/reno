@@ -76,7 +76,13 @@ require("./config/index_paper_page.php");
 				    <li class=""><?php echo $i;?></li>
 				<?php } ?>
 			    </ul>
-				<div><?php echo GBsubstr($slide_data["name"][0], 0, 53);?></div>
+				<div>
+				<?php 
+				if (isset($slide_data) && isset($slide_data['name'])  && isset($slide_data['name'][0]) ) {
+					echo GBsubstr($slide_data["name"][0], 0, 53);
+				}
+				?>
+				</div>
 			</div>
 			<div id="news_content" class="">
 				<span class="box_title">News</span>
@@ -239,7 +245,8 @@ $(function () {
 		index_news = a;
 		var alpha = 0;
 		for (i_news = 0; i_news < aNum_news.length; i_news++)aNum_news[i_news].className = "";
-		aNum_news[index_news].className = "current";
+
+		aNum_news[index_news] && (aNum_news[index_news].className = "current");
 		clearInterval(timer_news);			
 		var nth = index_news + 1;
         var title = $("#slide_box_news .list li:nth-child("+nth+") a img").attr("alt");	
@@ -249,11 +256,13 @@ $(function () {
 			aImg_news[i_news].style.filter = "alpha(opacity=0)";	
 		}
 		timer_news = setInterval(function () {
-			alpha += 2;
-			alpha > 100 && (alpha =100);
-			aImg_news[index_news].style.opacity = alpha / 100;
-			aImg_news[index_news].style.filter = "alpha(opacity = " + alpha + ")";
-			alpha == 100 && clearInterval(timer_news)
+			if (aImg_news[index_news]) {
+				alpha += 2;
+				alpha > 100 && (alpha =100);
+				aImg_news[index_news].style.opacity = alpha / 100;
+				aImg_news[index_news].style.filter = "alpha(opacity = " + alpha + ")";
+				alpha == 100 && clearInterval(timer_news);
+			}
 		},20);
 	}
 });

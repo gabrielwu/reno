@@ -27,7 +27,7 @@ $row = mysql_fetch_array($result);
 		<div id="tab" class="box1">
 		    <h3>修改成员</h3>
 			<form  action="../model/modify_member.php" target='iframe' method="post" enctype="multipart/form-data">
-			<input type='hidden' type='hidden' name='id' value='<?php echo $_GET[id];?>'/>
+			<input type='hidden' type='hidden' name='id' value='<?php echo $_GET['id'];?>'/>
 				<table width="650px" align="center" >
 					<tr>
 						<td width="80px" align="center">中文名：</td>
