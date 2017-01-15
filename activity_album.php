@@ -33,8 +33,8 @@
 		    while($row = mysql_fetch_array($result)){
 	    ?>
             <div class="item">
-		        <a rel="example_group" href="<?php echo "./background".substr($row[pi_path],2)?>" title="<?php echo $row['pi_intro']; ?>">
-			        <img alt="" src="<?php echo "./background".substr($row[pi_path],2)?>" />
+		        <a rel="example_group" href="<?php echo "./background".substr($row['pi_path'],2)?>" title="<?php echo $row['pi_intro']; ?>">
+			        <img alt="" src="<?php echo "./background".substr($row['pi_path'],2)?>" />
 				</a> 
             </div>
 		<?php }?>
