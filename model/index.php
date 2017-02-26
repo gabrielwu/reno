@@ -7,6 +7,9 @@ function slide_intro() {
     $sql5="select id,name,slide_pic from lab";
 	$result5 = mysql_query("$sql5");
 	$k=0;
+	$id = array();
+	$description = array();
+	$slide_pic = array();
 	while($row5 = mysql_fetch_array($result5)){
 	    $file_path = $path[$k]="./background".substr($row5['slide_pic'],2);
 		if (is_file($file_path)) {

@@ -51,6 +51,8 @@
 		}	
 	}
 	$sql="update paper set p_coverpath='$name',p_highlighted='$highlighted',p_citation='$citation',p_iscover='$iscover',p_members='$authors',p_name='$pname',p_abstract='$abstract',p_journal='$journal',p_journal_no='$journal_no',p_date='$date',p_sci_link='$plink',p_link='$dlink' where p_id='$id'";
+
+	//echo "<script>console.info($sql);</script>";
 	mysql_query($sql);
 	$flag = mysql_affected_rows();
 	echo $info;

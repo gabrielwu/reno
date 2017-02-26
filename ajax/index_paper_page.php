@@ -12,7 +12,7 @@ header('Content-Type:text/html;charset=utf-8');
 	$result = mysql_query("$sql");
 	$k=0;
 	$currenttime=getdate();
-	$currentyear=$currenttime[year];
+	$currentyear=$currenttime['year'];
 	$nextyear=$currentyear+1;
 	$nextyear_newyearsdate=$nextyear."-01-01";
 	

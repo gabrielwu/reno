@@ -43,14 +43,17 @@ require("./config/index_paper_page.php");
 				    <li class=""><?php echo $i;?></li>
 				<?php } ?>
 			    </ul>
-				<div><?php echo GBsubstr($slide_data["description"][0], 0, 53);?></div>
+				<div>
+				<?php if (isset($slide_data["description"][0])) { ?>
+				<?php echo GBsubstr($slide_data["description"][0], 0, 53);?>
+				<?php } ?>
+				</div>
 			</div>
 			<div id="intro_content" class="">
 				<span class="box_title">Intro</span>
 				<a class="more_a" href="introduction.php">+more</a>
 				<div id='intro_marquee'>
-                    <div id='intro_marquee_1'><?php include("./background/attachments/html/introduction.html");?></br></br></div>                     
-                    <div id='intro_marquee_2'></div>     
+                     
                 </div>                               
             </div>
 		</div>
@@ -303,9 +306,13 @@ $(function () {
 	autoPlay();//应用
 	//图片切换, 淡入淡出效果
 	function show (a) {
+		if (!aNum.length) {
+			return;
+		}
 		index = a;
 		var alpha = 0;
-		for (i = 0; i < aNum.length; i++)aNum[i].className = "";
+		for (i = 0; i < aNum.length; i++)
+			aNum[i].className = "";
 		aNum[index].className = "current";
 		clearInterval(timer);			
 		var nth = index + 1;

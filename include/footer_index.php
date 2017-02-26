@@ -2,7 +2,7 @@
     <div class="copyright">
 	    <table>
 		    <tr>
-			    <td class="copyright_td">copyright&copyRE Lab. 2012</td>
+			    <td class="copyright_td">Copyright&copyRE  2017</td>
 				<td id="clicks">
 				    <script src="http://count.jlu.edu.cn/tongji.php?id=1&ttf=1&txtcolor=ffffff&bgcolor=aaaaaa"></script>
 				</td>

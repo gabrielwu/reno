@@ -22,7 +22,7 @@ function GBsubstr($string, $start, $length) {
 function page($request_page, $pageTotal, $page_nums, $page_name) {	 
     $request_page_pre = $request_page - 1;
 	$request_page_next = $request_page + 1;
-	
+	$page_html = '';
 	$req_left_nums = floor($page_nums / 2);
 	$req_right_nums = floor($page_nums / 2);
 	$left_ori = ($request_page - $req_left_nums);

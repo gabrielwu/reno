@@ -8,12 +8,11 @@
 	$date = $_GET['date'];
 	$ac_id = $_GET['ac_id'];
 	
-	if (isset($_GET['cover'])) {
+	if (!isset($_GET['cover'])) {
 	    $sql="update activity set ac_name='$acname',ac_content='$content',ac_date='$date' where ac_id='$ac_id'";	
 	} else {
 	    $sql="update activity set ac_name='$acname',ac_content='$content',ac_date='$date',ac_pic_cover_path='$cover' where ac_id='$ac_id'";
 	}
-	echo $sql;
 	if(mysql_query($sql)){
 		$index = 0;
 		foreach($_GET['fileNames'] as $life_pic){
